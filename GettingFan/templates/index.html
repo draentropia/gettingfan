@@ -1,0 +1,37 @@
+{%  load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{% static "fancontrol/favicon.ico" %}">
+
+    <title>Having FAN!</title>
+
+    {# Cargamos la librería #}
+    {% load bootstrap4 %}
+
+    {# CSS Bootstrap #}
+    {% bootstrap_css %}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+        <h1>Having FAN</h1>
+        <p>Control a fan using your browser</p>
+    </div>
+    </div>
+    <div class="container">
+            <form action="#" method="get">
+                <img src="{% static "fancontrol/fan.gif" %}" height="50%">
+                <p><input type="submit" a class="btn btn-lg btn-primary" value="Switch on" name="switch_on">
+                <input type="submit" a class="btn btn-lg btn-primary" value="Switch off" name="switch_off"></p>
+            </form>
+    </div>
+</head>
+
+<body>
+
+{# JS y jQuery Bootstrap #}
+{% bootstrap_javascript jquery='full' %}
+
+</body>
+</html>
